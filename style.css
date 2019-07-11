@@ -33,7 +33,18 @@ body{
 /*Define o tamanho dos blocos*/
 div{
     height: 70px;
+    position: relative;
+    overflow: hidden;
+    
 }
+
+img{
+    position: absolute;
+    height: 60px;
+    margin-left: -30px;
+}
+
+
 
 
 
