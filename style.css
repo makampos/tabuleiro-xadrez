@@ -1,0 +1,43 @@
+body{
+    margin-left:50px;
+    padding:50px;
+    text-align: center;
+    max-height: 570px;
+    max-width: 700px;
+}
+
+
+
+.grid-container{
+    display:grid;
+    grid-column-gap:1px; /*Define o espaço entre as colunas*/
+    padding: 5px;
+    height: 100%; /*Define o tamanho do container*/
+    grid-template-columns: auto auto auto auto auto auto auto auto ; /*Divide o container em 8 colunas*/
+    background-color: #ccc;
+    text-align: center;  
+}
+
+/*Pinta os blocos*/
+#t2,#t4,#t6,#t8,#t9,#t11,#t13,#t15,#t18,#t20,#t22,#t24,#t25,#t27,#t29,#t24,#t31,#t34,#t36,#t38,#t40,#t41,#t43,#t45,#t47
+,#t50,#t52,#t54,#t56,#t57,#t59,#t61,#t63 {
+    background-color:black;
+}
+
+/*Pinta os blocos*/
+#t1,#t3,#t5,#t7,#t10,#t12,#t14,#t16,#t17,#t19,#t21,#t23,#t26,#t28,#t30,#t32,#t33,#t35,#t37,#t39,#t42,#t44,#t46,#t48,#t49
+,#t51,#t53,#t55,#t58,#t60,#t62,#t64{
+    background-color:white;
+}
+
+/*Define o tamanho dos blocos*/
+div{
+    height: 70px;
+}
+
+
+
+
+
+
+
