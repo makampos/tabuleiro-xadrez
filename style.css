@@ -1,21 +1,27 @@
+/* Centraliza todo conteudo contido na tag body  e define o tamanho máximo para a largura como 700px */
 body{
-    margin-left:50px;
-    padding:50px;
+    margin:auto; 
+    padding:auto;
     text-align: center;
-    max-height: 570px;
     max-width: 700px;
+    font-family: 'Roboto', sans-serif;
 }
 
+/**/
+h1{
+    letter-spacing: 0.3em;
+    font-weight: normal;
+    text-transform: uppercase;  
+}
 
-
+/**/
 .grid-container{
     display:grid;
     grid-column-gap:1px; /*Define o espaço entre as colunas*/
-    padding: 5px;
+    padding: 10px;
     height: 100%; /*Define o tamanho do container*/
     grid-template-columns: auto auto auto auto auto auto auto auto ; /*Divide o container em 8 colunas*/
     background-color: #ccc;
-    text-align: center;  
 }
 
 /*Pinta os blocos*/
@@ -35,9 +41,9 @@ div{
     height: 70px;
     position: relative;
     overflow: hidden;
-    
 }
 
+/* Define posicionamento das (imagens) peças em relação aos blocos */
 img{
     position: absolute;
     height: 60px;
