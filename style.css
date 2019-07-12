@@ -7,40 +7,39 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-/**/
+/* Ajusta o título, alinhamento, espaço entre as letras e tipo de font*/
 h1{
+    text-align: center;
     letter-spacing: 0.3em;
     font-weight: normal;
-    text-transform: uppercase;  
+    text-transform: uppercase; 
 }
 
-/**/
+/* Define o tamanho e posicionamento do grid, espaçamento das colunas, expessura e bor da borda */
 .grid-container{
     display:grid;
     grid-column-gap:1px; /*Define o espaço entre as colunas*/
-    padding: 10px;
-    height: 100%; /*Define o tamanho do container*/
-    grid-template-columns: auto auto auto auto auto auto auto auto ; /*Divide o container em 8 colunas*/
-    background-color: #ccc;
+    width: 560px;
+    height: 560px;/*Define o tamanho do container*/
+    grid-template-columns: auto auto auto auto auto auto auto auto ; /*Divide o grid-container em 8 colunas*/
+    border: 10px solid #cccccc;
+    margin-left: 70px;
 }
 
-/*Pinta os blocos*/
-#t2,#t4,#t6,#t8,#t9,#t11,#t13,#t15,#t18,#t20,#t22,#t24,#t25,#t27,#t29,#t24,#t31,#t34,#t36,#t38,#t40,#t41,#t43,#t45,#t47
-,#t50,#t52,#t54,#t56,#t57,#t59,#t61,#t63 {
-    background-color:black;
+/* Pinta os blocos */
+.line-1 div:nth-child(2n+1){
+    background: black;
 }
 
-/*Pinta os blocos*/
-#t1,#t3,#t5,#t7,#t10,#t12,#t14,#t16,#t17,#t19,#t21,#t23,#t26,#t28,#t30,#t32,#t33,#t35,#t37,#t39,#t42,#t44,#t46,#t48,#t49
-,#t51,#t53,#t55,#t58,#t60,#t62,#t64{
-    background-color:white;
+/* Pinta os blocos */
+.line-2 div:nth-child(2n){
+    background: black;
 }
 
-/*Define o tamanho dos blocos*/
-div{
+/* Define o tamanho dos blocos */
+div {
     height: 70px;
-    position: relative;
-    overflow: hidden;
+    position: relative; 
 }
 
 /* Define posicionamento das (imagens) peças em relação aos blocos */
